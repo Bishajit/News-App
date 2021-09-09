@@ -2,13 +2,8 @@ from flask import Flask, render_template, request, Response
 from newsapi.newsapi_client import NewsApiClient
 import requests, sqlite3
 
-
-
-
-
 application = app = Flask(__name__)
 
- 
 @app.route('/')
 def Index():
 
