@@ -68,14 +68,5 @@ for ex in  extracted_articles:
 conn.commit()
 
 
-for ex in extracted_articles:
-    article = ex['title']
-    publication_date = ex['publishedAt']
-    sql = 'INSERT INTO news (article, publication_date) VALUES(?,?)'
-    val = (article, publication_date)
-    c.execute(sql,val)
-
-conn.commit()
-
 if __name__ == "__main__":
     app.run(debug=True)
