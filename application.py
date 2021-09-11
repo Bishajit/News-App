@@ -1,9 +1,15 @@
 from flask import Flask, render_template, request, Response
 from newsapi.newsapi_client import NewsApiClient
 import requests, sqlite3
+import datetime as dt
+
+
+
+
 
 application = app = Flask(__name__)
 
+ 
 @app.route('/')
 def Index():
 
@@ -50,15 +56,17 @@ conn = sqlite3.connect(DB_PATH)
 api_req = requests.get("https://newsapi.org/v2/top-headlines?sources=engadget&apiKey=1ec0f2aedee24c70b1eecb0f97e30d26")
 api_req = api_req.json()
 extracted_articles = api_req["articles"]
+current_date = dt.date.today()
 
 c = conn.cursor()
 
-for ex in  extracted_articles:
+for ex in extracted_articles:
     article = ex['title']
-    publication_date = ex['publishedAt']
-    sql = 'INSERT INTO news (article, publication_date) VALUES(?,?)'
-    val = (article, publication_date)
+    date_viewed = current_date
+    sql = 'INSERT OR IGNORE INTO News(article,date_viewed) VALUES(?,?)'
+    val = (article, date_viewed)
     c.execute(sql,val)
+    
 
 conn.commit()
 
