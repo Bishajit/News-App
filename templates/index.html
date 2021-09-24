@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Engadget News headlines</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+ 
+<div class="jumbotron" style="color:black">
+    <h1 style="color:black">
+        Flask News App
+    </h1>
+</div>
+ 
+<div class="container">
+
+    {% for i,aut, new, des, we, pu in context %}
+    <img src="{{i}}" alt="" width="200" height="200">
+
+    <h5>Title: </h5> {{new}}
+    <h5 >Author:</h5> <a id="start" href={{ aut }}>{{aut}}</a>
+    <h5>Description: </h5> {{des}}
+    <h5>link: </h5> <a href={{ we }}>{{ we }}</a>
+    <h5 id="end">publication date: {{pu}}</h5>
+    {% endfor %}
+</div>
+ 
+ 
+</body>
+</html>
