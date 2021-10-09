@@ -1,10 +1,14 @@
 from flask import Flask, render_template, request, Response
 from newsapi.newsapi_client import NewsApiClient #from newsapi import NewsAPiClient sometimes doesnt work
 import requests, sqlite3
+
 import datetime as dt
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
-
+api_key = os.getenv('api_key')
 
 
 application = app = Flask(__name__) #wont run if its app.py
@@ -13,7 +17,7 @@ application = app = Flask(__name__) #wont run if its app.py
 @app.route('/') #routes to the link
 def Index():
 
-    newsapi = NewsApiClient(api_key="1ec0f2aedee24c70b1eecb0f97e30d26")
+    newsapi = NewsApiClient(api_key)
     topheadlines = newsapi.get_top_headlines(sources="engadget")
 
     #Goes to the api and takes everything from articles 
@@ -55,7 +59,7 @@ DB_PATH = "news.db" #path to database
 conn = sqlite3.connect(DB_PATH) #sqlite connects to the database
 
 
-api_req = requests.get("https://newsapi.org/v2/top-headlines?sources=engadget&apiKey=1ec0f2aedee24c70b1eecb0f97e30d26") #
+api_req = requests.get(f"https://newsapi.org/v2/top-headlines?sources=engadget&apiKey={api_key}") #
 api_req = api_req.json() #gets the information and turns it into json
 extracted_articles = api_req["articles"] #Gets everything underneath articles
 current_date = dt.date.today() #Uses datetime module to set dt to the current day
