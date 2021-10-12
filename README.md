@@ -9,7 +9,7 @@ This API allowed me to grab the headline. As a template, I followed this video o
 Python Flask Create News Web Application With News API
 https://www.youtube.com/watch?v=I5syfw5zgnc
 
-This video also helped me understand the new API better
+This video also helped me understand the news API better
 https://www.youtube.com/watch?v=oUuIVJ96JsI&ab_channel=IzzyAnalytics
 
 I went through a lot of issues with connecting my database to my application.py because I was trying to do it on my own but it was going well. This is where stack overflow helped me
