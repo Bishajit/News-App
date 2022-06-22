@@ -58,7 +58,8 @@ DB_PATH = "news.db" #path to database
 
 conn = sqlite3.connect(DB_PATH) #sqlite connects to the database
 
-
+# Init
+# newsapi = NewsApiClient(api_key=" ") news api new format for entering api key
 api_req = requests.get(f"https://newsapi.org/v2/top-headlines?sources=engadget&apiKey={api_key}") #
 api_req = api_req.json() #gets the information and turns it into json
 extracted_articles = api_req["articles"] #Gets everything underneath articles
