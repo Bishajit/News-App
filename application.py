@@ -17,7 +17,7 @@ application = app = Flask(__name__) #wont run if its app.py
 @app.route('/') #routes to the link
 def Index():
 
-    newsapi = NewsApiClient(api_key)
+    newsapi = NewsApiClient(api_key) #api key hidden
     topheadlines = newsapi.get_top_headlines(sources="engadget")
 
     #Goes to the api and takes everything from articles 
