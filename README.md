@@ -5,4 +5,5 @@
 - change the code for the database
 - Update api key and hide it in AWS.
 - Fix branches
+- implement more functions
 
