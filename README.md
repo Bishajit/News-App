@@ -9,3 +9,4 @@
 - Update AWS info
 - create more pages
 - Check if app works on VM properly.
+- new api
