@@ -10,3 +10,4 @@
 - create more pages
 - Check if app works on VM properly.
 - get alerts 
+- update aws credentials
