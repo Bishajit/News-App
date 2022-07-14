@@ -12,3 +12,4 @@
 - get alerts 
 - update aws credentials
 - Update documentation
+- update main branch
