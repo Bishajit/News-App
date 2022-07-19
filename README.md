@@ -11,7 +11,8 @@
 - Check if app works on VM properly.
 - get alerts 
 - update aws credentials
-- Update documentation/ architecture
+- Update documentation/ architecture / pipeline
 - update main branch
 - implement AWS cognito
 - use the cloud for database
+
