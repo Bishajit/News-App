@@ -9,6 +9,7 @@
 - Update AWS info
 - create more pages
 - Check if app works on VM properly.
+- add testing
 - get alerts 
 - update aws credentials
 - Update documentation/ architecture / pipeline
