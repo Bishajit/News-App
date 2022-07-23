@@ -16,4 +16,5 @@
 - update main branch
 - implement AWS cognito
 - use the cloud for database/ make it resilient
+- upgrade home page
 
