@@ -9,7 +9,7 @@
 - Update AWS info
 - create more pages
 - Check if app works on VM properly.
-- add testing/ preferably unit testing
+- add testing/ preferably unit testing on different pages
 - get alerts 
 - update aws credentials
 - Update documentation/ architecture / pipeline
@@ -17,4 +17,3 @@
 - implement AWS cognito
 - use the cloud for database/ make it resilient
 - upgrade home page/ give more options for users to choose options 
-
