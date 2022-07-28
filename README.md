@@ -13,7 +13,7 @@
 - get alerts 
 - update aws credentials
 - Update documentation/ architecture / pipeline
-- update main branch/ remove unecessary 
+- update main branch/ remove unecessary branches
 - implement AWS cognito
 - use the cloud for database/ make it resilient
 - upgrade home page/ give more options for users to choose options 
