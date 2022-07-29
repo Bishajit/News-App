@@ -6,7 +6,7 @@
 - Update api key 
 - Fix branches especially main branch
 - implement more functions
-- Update AWS info
+- Update AWS inf/ improve AWS security
 - create more pages
 - Check if app works on VM properly.
 - add testing/ preferably unit testing on different pages
