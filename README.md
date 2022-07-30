@@ -10,7 +10,7 @@
 - create more pages
 - Check if app works on VM properly.
 - add testing/ preferably unit testing on different pages
-- get alerts 
+- get alerts/ AWS/Slack
 - update aws credentials
 - Update documentation/ architecture / pipeline
 - update main branch/ remove unecessary branches
