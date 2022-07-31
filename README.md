@@ -3,7 +3,7 @@
 - api not working-needs fix
 - needs ci-cd pipeline (Github actions or Code Pipeline)
 - change the code for the database, replace with mysql
-- Update api key 
+- Update api key and make it secure through AWS
 - Fix branches especially main branch
 - implement more functions
 - Update AWS inf/ improve AWS security
