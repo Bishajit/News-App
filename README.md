@@ -7,7 +7,7 @@
 - Fix branches especially main branch
 - implement more functions
 - Update AWS inf/ improve AWS security
-- create more pages
+- create more pages for different genres
 - Check if app works on VM properly.
 - add testing/ preferably unit testing on different pages
 - get alerts/ AWS/Slack
