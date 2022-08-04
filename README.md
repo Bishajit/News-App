@@ -10,10 +10,10 @@
 - create more pages for different genres
 - Check if app works on VM properly.
 - add testing/ preferably unit testing on different pages
-- get alerts/ AWS/Slack/email
+- get alerts/ AWS/Slack/email/SNS
 - update aws credentials
 - Update documentation/ architecture / pipeline
 - update main branch/ remove unecessary branches
 - implement AWS cognito and AWS user pool
-- use the cloud for database/ make it resilient
+- use the cloud for database/ make it resilient/ 
 - upgrade home page/ give more options for users to choose options 
