@@ -18,3 +18,4 @@
 - use the cloud for database/ make it resilient/ 
 - upgrade home page/ give more options for users to choose options
 - research new tech/ new features to add
+- document bugs
