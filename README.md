@@ -20,4 +20,4 @@
 - upgrade home page/ give more options for users to choose options
 - research new tech/ new features to add
 - document bugs and bug fixes
-- create the system design
+- create the system design/pipeline design
